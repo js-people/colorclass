@@ -1,0 +1,129 @@
+/*
+reset
+*/
+p { text-indent: 0; }
+.navbar { margin-bottom: 0px; }
+.footer { padding: 1em; margin-bottom: -40px; position: relative; z-index: 999;}
+
+
+/*
+navbar
+*/
+.social-icons > li { position: relative;
+    display: inline-block;
+}
+.social-icons > li > a {
+    padding: 0px 5px;
+}
+.navbar-brand-centered {
+    padding: 0px;
+}
+.navbar-right {
+    margin-top: 12px;
+}
+.navbar-brand img { margin-top: 3px; }
+
+@media screen and (max-width:450px){
+    .navbar>.container .navbar-brand-centered img {
+        padding-top: 10px; 
+        max-width: 180px;
+        height: auto;
+    }
+    .navbar-right {
+        margin-left: 5px;
+    }
+}
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 250px;
+        text-align: center;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -125px;
+    }
+}
+
+
+
+
+/*
+parallax
+*/
+.parallax [class*="bg-"] {
+    position: relative;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100% 100%;
+    padding: 5% 3% 3% 3%;
+}
+.parallax .bg-blackwight {
+    background-image: url('../img/3.jpg');
+    min-height: 99vh;
+}
+.parallax .bg-color {
+    background-image: url('../img/4.jpg');
+    min-height: 80vh;
+    padding-top: 10%;
+}
+.parallax .home-header {
+    font: 1.8em bold;
+    padding: 1em;
+    box-shadow: 0 0 2px #333;
+        -webkit-box-shadow: 0 0 2px #333;
+        -moz-box-shadow: 0 0 2px #333;
+        -o-box-shadow: 0 0 2px #333;
+}
+.parallax .color-capture {
+    font-size: 1.2em;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 0.125em #333; 
+        -webkit-box-shadow: 0 1px 0.125em #333; 
+        -moz-box-shadow: 0 1px 0.125em #333; 
+        -o-box-shadow: 0 1px 0.125em #333; 
+}
+
+
+
+/*
+content
+*/
+.header-title {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.home-header p {
+    margin-left: 25px;
+}
+.home-test {
+    background: url("../img/4.jpg") #fff;
+    margin: 0.5em; 
+}
+#test-section .panel {
+    margin: 1em;
+}
+.test-p {
+    margin-top: 30px;
+}
+.fast-test div {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 5px;
+    min-height: 50px;
+}
+ul.dropdown-menu li {
+    cursor: pointer;
+}
+
+/*
+Responsive
+*/
+@media screen and (max-width:768px){
+    .parallax .home-header {
+        font: 1.4em bold;
+    }
+}
