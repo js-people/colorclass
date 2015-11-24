@@ -1,9 +1,9 @@
 # [ColorClass](http://ColorClass.ir)
 -----------
 Follow the steps below:
-*1. Go to our home page.
-*2. Download javascript file and copy into your javascripts folder (Choose one of files).
-*3. Patch the file in your HTML code.
+- Go to our home page.
+- Download javascript file and copy into your javascripts folder (Choose one of files).
+- Patch the file in your HTML code.
 
 ```
 <script type="text/javascript" src="js/colorclass-v.js"></script>
@@ -11,7 +11,7 @@ or
 <script type="text/javascript" src="js/colorclass-v.min.js"></script>
 ```
 
-*4. Your page is ready and you can see the usage instruction:
+- Your page is ready and you can see the usage instruction:
 
 
 ## How to use ColorClass
@@ -43,4 +43,4 @@ ColorClass controls the text color, the background color and the background opac
 <span class="#dc3023 %35"> it is a span with red background and 0.35 opacity </span>
 <table class="%90"> it is a table with css background and 0.9 opacity </table> 
 ```
-- Note: In this case, just the background Alpha would be changed and the entire contents of the box would be with one hundred percent clearly displayed.
+Note: In this case, just the background Alpha would be changed and the entire contents of the box would be with one hundred percent clearly displayed.
