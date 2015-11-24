@@ -1,19 +1,15 @@
 # [ColorClass](http://ColorClass.ir)
 -----------
 Follow the steps below:
--
-1- Go to our home page.
--
-2- Download javascript file and copy into your javascripts folder (Choose one of files).
--
-3- Patch the file in your HTML code.
+~ 1- Go to our home page.
+~ 2- Download javascript file and copy into your javascripts folder (Choose one of files).
+~ 3- Patch the file in your HTML code.
 ```
 <script type="text/javascript" src="js/colorclass-v.js"></script>
 or
 <script type="text/javascript" src="js/colorclass-v.min.js"></script>
 ```
--
-4- Your page is ready and you can see the usage instruction:
+~ 4- Your page is ready and you can see the usage instruction:
 
 
 # How to use ColorClass
