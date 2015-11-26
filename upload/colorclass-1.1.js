@@ -1,5 +1,5 @@
 /*!
- *  Color Class 1.0 by @colorclass - http://colorclass.ir
+ *  Color Class 1.1 by @colorclass - http://colorclass.ir
  *  github = https://github.com/js-people (firefox - IE 8+ - edge - chrome - safari)
  */
 
@@ -43,15 +43,21 @@ function fColorClass() {
 
 				vTColour = vTColour.replace("@", "#");
 
-				var patt = /^#([\da-fA-F]{2})([\da-fA-F]{2})([\da-fA-F]{2})$/;
-							var matches = patt.exec(vTColour);
+                                if(vTColour.length == 4)
+                                	vTColour = "#" + vTColour.substring(1,2) + vTColour.substring(1,2) + vTColour.substring(2,3) + vTColour.substring(2,3) + vTColour.substring(3,4) + vTColour.substring(3,4);
 
-				var r = parseInt(matches[1], 16);
-				var g = parseInt(matches[2], 16);
-				var b = parseInt(matches[3], 16);
-				var rgb = "rgb(" + r + "," + g + "," + b + ")";
+                                if(vTColour.length == 7){
+					var patt = /^#([\da-fA-F]{2})([\da-fA-F]{2})([\da-fA-F]{2})$/;
 
-				vElement.style.color = rgb;
+                                        var matches = patt.exec(vTColour);
+
+					var r = parseInt(matches[1], 16);
+					var g = parseInt(matches[2], 16);
+					var b = parseInt(matches[3], 16);
+					var rgb = "rgb(" + r + "," + g + "," + b + ")";
+
+					vElement.style.color = rgb;
+                                }
 			}
 
 			if (vOpacity != -1) {
@@ -84,6 +90,9 @@ function fColorClass() {
 }
 
 function fChangeOpacity(vElement, vValue, vBColor) {
+	if(vBColor.length == 4)
+        	vBColor = "#" + vBColor.substring(1,2) + vBColor.substring(1,2) + vBColor.substring(2,3) + vBColor.substring(2,3) + vBColor.substring(3,4) + vBColor.substring(3,4);
+
 	var patt = /^#([\da-fA-F]{2})([\da-fA-F]{2})([\da-fA-F]{2})$/;
 
 	if(vBColor == "") 
@@ -105,7 +114,7 @@ function fChangeOpacity(vElement, vValue, vBColor) {
 		   vElement.style.backgroundColor = document.defaultView.getComputedStyle(vElement,null).getPropertyValue("background-color").replace(")", "," + vValue + ")").replace("rgb", "rgba");
 		}
 	}
-	else {
+	else if(vBColor.length == 7){
 		var matches = patt.exec(vBColor);
 
 		var r = parseInt(matches[1], 16);
