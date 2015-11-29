@@ -47,13 +47,5 @@ Note: In this case, just the background Alpha would be changed and the entire co
 
 
 ## Changes:
-1.0
-|
-|
-|
-|
 1.1
-|
-|
-|
-|
+| supports 3 16-bit colors like #f07
