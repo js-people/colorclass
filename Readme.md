@@ -44,3 +44,16 @@ ColorClass controls the text color, the background color and the background opac
 <table class="%90">it is a table with css background and 0.9 opacity</table> 
 ```
 Note: In this case, just the background Alpha would be changed and the entire contents of the box would be with one hundred percent clearly displayed.
+
+
+## Changes:
+1.0
+|
+|
+|
+|
+1.1
+|
+|
+|
+|
