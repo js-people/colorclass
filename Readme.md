@@ -61,6 +61,8 @@ Note: In this case, just the background Alpha would be changed and the entire co
 8--- Hover, Text opacity hover ![xx]=[xx] or ![x]=[x] (Example: !15=9 , !5=100 [or !5= ] )
 9--- Hover, BackGround color hover #[xxx]=[xxx] or #[xxxxxx]=[xxxxxx] (Example: #f0f=0f0 , #ff00ff=00ff00 )
 10-- Hover, BackGround opacity hover %[xx]=[xx] or %[x]=[x] (Example: %15=9 , %5=100 [or %5= ] )
- This revision:
 11-- Improve, IE and Chrome
+ This revision:
+12-- Transition, Auto transition (all 0.3s)
+
 ```

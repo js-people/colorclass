@@ -46,11 +46,11 @@ parallax
     padding: 5% 3% 3% 3%;
 }
 .parallax .bg-blackwight {
-    background-image: url('../img/3.jpg');
+    background-image: url('../_img/3.jpg');
     min-height: 99vh;
 }
 .parallax .bg-color {
-    background-image: url('../img/4.jpg');
+    background-image: url('../_img/4.jpg');
     min-height: 80vh;
     padding-top: 10%;
 }
@@ -85,7 +85,7 @@ content
     margin-left: 25px;
 }
 .home-test {
-    background: url("../img/4.jpg") #fff;
+    background: url("../_img/4.jpg") #fff;
     margin: 0.5em; 
 }
 #test-section .panel {
@@ -115,7 +115,7 @@ Responsive
 
 
 /* FontAwesome */
-@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.4.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'FontAwesome';src:url('../_fonts/fontawesome-webfont.eot');src:url('../_fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../_fonts/fontawesome-webfont.woff2') format('woff2'), url('../_fonts/fontawesome-webfont.woff') format('woff'), url('../_fonts/fontawesome-webfont.ttf') format('truetype'), url('../_fonts/fontawesome-webfont.svg') format('svg');font-weight:normal;font-style:normal;}
 .fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 .fa-lg{font-size:1.33333333em;line-height:0.75em;vertical-align:-15%;}
 .fa-2x{font-size:2em;}
