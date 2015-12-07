@@ -1,15 +1,32 @@
-/*
-reset
-*/
+/* reset */
 p { text-indent: 0; }
+a { color: inherit; }
+a:hover {text-decoration: none;}
 .navbar { margin-bottom: 0px; }
 .footer { padding: 1em; margin-bottom: -40px; position: relative; z-index: 999;}
-
-
-/*
-navbar
-*/
-.social-icons > li { position: relative;
+.pkam { padding-left: 4px; }
+.witec { 
+	text-shadow: 1px 1px 1px #666;
+	-moz-text-shadow: 1px 1px 1px #666;
+	-webkit-text-shadow: 1px 1px 1px #666;
+}
+.lists {
+    margin-bottom: 2em;
+}
+.changelog h2, .versionlist h2 {
+    font-family: cursive;
+}
+.changelog ul {
+    font-family: fantasy;
+    font-size: 1.15em;
+}
+.versionlist ul {
+    font-family: monospace;
+    font-size: 1.25em;
+}
+/* navbar */
+.social-icons > li { 
+    position: relative;
     display: inline-block;
 }
 .social-icons > li > a {
@@ -35,9 +52,13 @@ navbar
 }
 
 
-/*
-parallax
-*/
+/* parallax */
+.number {
+	position: absolute;
+	left: 45%;
+	bottom: -10px;
+	z-index:9999;
+}
 .parallax [class*="bg-"] {
     position: relative;
     background-attachment: fixed;
@@ -74,9 +95,7 @@ parallax
 
 
 
-/*
-content
-*/
+/* content */
 .header-title {
     font-size: 1.8em;
     font-weight: 700;
@@ -100,19 +119,17 @@ content
     margin-top: 5px;
     min-height: 50px;
 }
+.testbtngroup div {margin:3px 0px;}
 ul.dropdown-menu li {
     cursor: pointer;
 }
 
-/*
-Responsive
-*/
+/* Responsive */
 @media screen and (max-width:768px){
     .parallax .home-header {
         font: 1.4em bold;
     }
 }
-
 
 /* FontAwesome */
 @font-face{font-family:'FontAwesome';src:url('../_fonts/fontawesome-webfont.eot');src:url('../_fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../_fonts/fontawesome-webfont.woff2') format('woff2'), url('../_fonts/fontawesome-webfont.woff') format('woff'), url('../_fonts/fontawesome-webfont.ttf') format('truetype'), url('../_fonts/fontawesome-webfont.svg') format('svg');font-weight:normal;font-style:normal;}
@@ -124,8 +141,13 @@ Responsive
 .fa-ul > li{position:relative;}
 .fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:0.14285714em;text-align:center;}
 .fa-li.fa-lg{left:-1.85714286em;}
+.fa-paper-plane:before{content: "\f1d8";}
+.fa-check:before{content:"\f00c";}
+.fa-times:before {content: "\f00d";}
 .fa-heart:before{content:"\f004";}
 .fa-github:before{content:"\f09b";}
 .fa-facebook-square:before{content:"\f082";}
 .fa-twitter-square:before{content:"\f081";}
 .fa-rss-square:before{content:"\f143";}
+.fa-paint-brush:before{content: "\f1fc";}
+.fa-percent:before{content: "\f295";}

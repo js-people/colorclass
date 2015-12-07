@@ -18,51 +18,80 @@ or
 ColorClass controls the text color, the background color and the background opacity only by set a class.
 
 ### Text color:
-- Add a class like: **@5b8930** into your tag, without any CSS code. Example:
+- Add a class like: **t#5b8930** into your tag, without any CSS code. Example:
 
 ```
-<div class="@19b5fe">it is a div with blue text</div>
-<p class="@dc3023">it is a paragraph with red text</p>
-<i class="fa fa-check @5b8930"></i> it is a green font-icon
+<div class="t#19b5fe">it is a div with blue text</div>
+<p class="t#dc3023">it is a paragraph with red text</p>
+<i class="fa fa-check t#5b8930"></i> it is a green font-icon
 ```
 
 ### Background color:
-- Add a class like **#19b5fe** into your tag, without any CSS code. Example:
+- Add a class like **b#19b5fe** into your tag, without any CSS code. Example:
 
 ```
-<div class="col-md-12 #19b5fe">it is a div with blue background</div>
-<span class="#dc3023">it is a span with red background</span>
-<table class="#5b8930">it is a table with green background</table> 
+<div class="col-md-12 b#19b5fe">it is a div with blue background</div>
+<span class="b#dc3023">it is a span with red background</span>
+<table class="b#5b8930">it is a table with green background</table> 
+```
+
+### Text opacity:
+- Add a class like **t%50** or **t%5** into your tag, without any CSS code. Example:
+
+```
+<div class="col-md-12 #19b5fe t%5">it is a div with blue text and 0.5 text opacity</div>
+<span class="#dc3023 t%35">it is a span with red text and 0.35 text opacity</span>
+<table class="t%90">it is a table with css text and 0.9 text opacity</table> 
 ```
 
 ### Background opacity:
-- Add a class like **%50** or **%5** into your tag, without any CSS code. Example:
+- Add a class like **b%50** or **b%5** into your tag, without any CSS code. Example:
 
 ```
-<div class="col-md-12 #19b5fe %5">it is a div with blue background and 0.5 opacity</div>
-<span class="#dc3023 %35">it is a span with red background and 0.35 opacity</span>
-<table class="%90">it is a table with css background and 0.9 opacity</table> 
+<div class="col-md-12 #19b5fe b%5">it is a div with blue background and 0.5 opacity</div>
+<span class="#dc3023 b%35">it is a span with red background and 0.35 opacity</span>
+<table class="b%90">it is a table with css background and 0.9 opacity</table> 
 ```
 Note: In this case, just the background Alpha would be changed and the entire contents of the box would be with one hundred percent clearly displayed.
 
 
 ## Specifications:
 ```
-1--- Class, Reading all "class" tags (Example: <div class=""></div> )
-2--- Function, "cc_fColorClass(1, 1, 1)" resets all of the cchtml colors and opacities and hovers.
-               "cc_fColorClass(0, 1, 0)" resets all of the cchtml text colors and opacities.
-               "cc_fColorClass(0, 0, 1)" resets all of the cchtml background colors and opacities.
-               "cc_fColorClass(0, 1, 1)" resets all of the cchtml text and backgrounds colors and opacities.
-3--- Color, Text color @[xxxxxx] or @[xxx] (Example: <div class="@f1b2af"></div>, @f0f )
-4--- Color, BackGround color #[xxxxxx] or #[xxx] (Example: #ff00ff, #f0f )
-5--- Opacity, BackGround opacity %[xx] or %[x] (Example: %35 , %05 , %4 [or %40] )
-6--- Opacity, Text opacity ![xx] or ![x] (Example: !35 , !05 , !4 [or !40] )
-7--- Hover, Text color hover @[xxx]=[xxx] or @[xxxxxx]=[xxxxxx] (Example: @f0f=0f0 , @ff00ff=00ff00 )
-8--- Hover, Text opacity hover ![xx]=[xx] or ![x]=[x] (Example: !15=9 , !5=100 [or !5= ] )
-9--- Hover, BackGround color hover #[xxx]=[xxx] or #[xxxxxx]=[xxxxxx] (Example: #f0f=0f0 , #ff00ff=00ff00 )
-10-- Hover, BackGround opacity hover %[xx]=[xx] or %[x]=[x] (Example: %15=9 , %5=100 [or %5= ] )
-11-- Improve, IE and Chrome
- This revision:
-12-- Transition, Auto transition (all 0.3s)
+  1--- Class, Reading all "class" tags (Example: <div class=""></div> )
+  2--- Function, "cc_fColorClass(15)" resets all of the cchtml text colors, opacities and hovers,
+                                      resets all of the cchtml background colors, opacities and hovers,
+                                      resets all of the cchtml background images color filters, opacities and hovers.
+                 "cc_fColorClass(2)"  resets all of the cchtml text colors and opacities.
+                 "cc_fColorClass(4)"  resets all of the cchtml background colors and opacities.
+                 "cc_fColorClass(6)"  resets all of the cchtml text and backgrounds colors and opacities.
+  3--- Color, Text color t#[xxxxxx] or t#[xxx] (Example: <div class="t#f1b2af"></div>, t#f0f )
+  4--- Color, BackGround color b#[xxxxxx] or b#[xxx] (Example: b#ff00ff, b#f0f )
 
+ v 1.1
+  5--- Opacity, BackGround opacity b%[xx] or b%[x] (Example: b%35 , b%05 , b%4 [or b%40] )
+
+ v 1.2
+   6--- Opacity, Text opacity t%[xx] or t%[x] (Example: t%35 , t%05 , t%4 [or t%40] )
+   7--- Hover, Text color hover t#[xxx]=[xxx] or t#[xxxxxx]=[xxxxxx] (Example: t#f0f=0f0 , t#ff00ff=00ff00 )
+   8--- Hover, Text opacity hover t%[xx]=[xx] or t%[x]=[x] (Example: t%15=9 , t%5=100 [or t%5= ] )
+   9--- Hover, BackGround color hover b#[xxx]=[xxx] or b#[xxxxxx]=[xxxxxx] (Example: b#f0f=0f0 , b#ff00ff=00ff00 )
+   10-- Hover, BackGround opacity hover b%[xx]=[xx] or b%[x]=[x] (Example: b%15=9 , b%5=100 [or b%5= ] )
+ 
+ v 1.3.0
+   11-- Improve, IE9+ and Chrome
+ 
+ v 1.3.1
+   12-- Transition, Auto transition (all 0.3s)
+ 
+ v 1.4 (*New Protocol: "#"=>"b#" , "%"=>"b%" , "@"=>"t#" , "!"=>"t%" )
+   13-- Opacity, background image opacity i%[xx] or  (Example: i%35 , i%05 , i%4 [or i%40] )
+   14-- Filter, background image color filter i%[x] and [ b#[xxxxxx] or b#[xxx] ] (Example: i%1 b#ff00ff, i%5 b#f0f )
+   15-- Hover, background image hover i%[xx]=[xx] or i%[x]=[x] (Example: i%15=9 , i%5=100 [or i%5= ] )
+   16-- Hover, background image color filter hover i%[x] and [ b#[xxx]=[xxx] or b#[xxxxxx]=[xxxxxx] ] (Example: i%2 g#f0f=0f0 , i%6 g#ff00ff=00ff00 )
+   17-- Hover, background image color filter opacity hover i%[x] and [ b%[xx]=[xx] or b%[x]=[x] ] (Example: i%5 b%15=9 , i%85 b%5=100 [or g%5= ] )
+ 
+ v 1.5.0
+   18-- Opacity, "img" tag opacity i%[xx] or i%[x](Example: <img src="img/logo.png" class="i%3"> )
+   19-- Hover, "img" tag opacity i%[xx]=[xx] or i%[x]=[x](Example: <img src="img/logo.png" class="i%3="> )
+   20-- Color, Invert color (Example: b#ff00ff= means: b#ff00ff=00ff00 , t#=ff00ff means: t#t00ff00=ff00ff )
 ```
