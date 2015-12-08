@@ -96,5 +96,8 @@ Note: In this case, just the background Alpha would be changed and the entire co
    20-- Color, Invert color (Example: b#ff00ff= means: b#ff00ff=00ff00 , t#=ff00ff means: t#t00ff00=ff00ff )
 
  v 1.5.1
-   21-- Improve, IE9+ background image   
+   21-- Improve, IE9+ background image  
+
+ v 1.5.2
+   22-- Improve, Bugs   
 ```
