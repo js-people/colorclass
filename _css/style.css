@@ -13,7 +13,7 @@ a:hover {text-decoration: none;}
 .lists {
     margin-bottom: 2em;
 }
-.changelog h2, .versionlist h2 {
+i.changelog h2, .versionlist h2 {
     font-family: cursive;
 }
 .changelog ul {
@@ -83,18 +83,18 @@ a:hover {text-decoration: none;}
         -moz-box-shadow: 0 0 2px #333;
         -o-box-shadow: 0 0 2px #333;
 }
-.parallax .color-capture {
+.parallax .capture {
     font-size: 1.2em;
-    padding: 1em;
+    padding: 0em 1em;
     margin-bottom: 1em;
-    box-shadow: 0 1px 0.125em #333; 
-        -webkit-box-shadow: 0 1px 0.125em #333; 
-        -moz-box-shadow: 0 1px 0.125em #333; 
-        -o-box-shadow: 0 1px 0.125em #333; 
 }
-
-
-
+.parallax .boxdec {
+    padding: 1em;
+    border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+}
 /* content */
 .header-title {
     font-size: 1.8em;
@@ -103,23 +103,32 @@ a:hover {text-decoration: none;}
 .home-header p {
     margin-left: 25px;
 }
-.home-test {
-    background: url("../_img/4.jpg") #fff;
+.panel-body.tester {
+    background: url("../_img/4.jpg") no-repeat;
+    background-size: cover;
     margin: 0.5em; 
 }
 #test-section .panel {
     margin: 1em;
 }
-.test-p {
-    margin-top: 30px;
+.test_res {
+    margin-left: 200px;
 }
-.fast-test div {
+.test-box span {
     text-align: center;
     padding-top: 15px;
     margin-top: 5px;
-    min-height: 50px;
+    min-height: 45px;
+    display: block;
+    font-weight: bold;
 }
-.testbtngroup div {margin:3px 0px;}
+.testbtngroup div {
+    margin:3px 0px;
+}
+.testbtngroup h4 {
+    text-transform: capitalize;
+    margin-top: 1em;
+}
 ul.dropdown-menu li {
     cursor: pointer;
 }
@@ -129,6 +138,14 @@ ul.dropdown-menu li {
     .parallax .home-header {
         font: 1.4em bold;
     }
+    .col-xs-5, .col-xs-7, .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .test_res {
+        margin-left: 20px;
+    }
+
 }
 
 /* FontAwesome */
@@ -151,3 +168,13 @@ ul.dropdown-menu li {
 .fa-rss-square:before{content:"\f143";}
 .fa-paint-brush:before{content: "\f1fc";}
 .fa-percent:before{content: "\f295";}
+
+.fa-spin { -webkit-animation: fa-spin 1s infinite linear; animation: fa-spin 1s infinite linear; }
+@-webkit-keyframes fa-spin {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); }
+}
+@keyframes fa-spin {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); }
+}
