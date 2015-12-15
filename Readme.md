@@ -55,6 +55,29 @@ ColorClass controls the text color, the background color and the background opac
 Note: In this case, just the background Alpha would be changed and the entire contents of the box would be with one hundred percent clearly displayed.
 
 
+### Background image opacity:
+- Add a class like **i%50** or **i%5** into your tag, without any CSS code. Example:
+
+```
+<div class="col-md-12 i%5">it is a DIV with image background and 0.5 opacity</div>
+<span class="b#dc3023 i%35">it is a span with image background and 0.35 opacity</span>
+<table class="i%90">it is a table with image background and 0.9 opacity</table> 
+```
+Note: In this case, just the background image would be changed and the entire contents of the box would be with one hundred percent clearly displayed.
+
+
+### Hover:
+- For text hover or background color hover hover, add a = after the color code and then add the hove color code (Example: **b#000=fff**)
+
+```
+<div class="col-md-12 b#000=fff">it is a DIV with black background and wite background on hover</div>
+<span class="t#cf000f=19b5fe">it is a span with red text and blue text on hover</span>
+<table class="b%90=7">it is a table with 0.9 background opacity and 0.7 background opacity on hover</table> 
+<section class="t%4=67">it is a section with 0.4 text opacity and 0.67 text opacity on hover</section>
+<body class="i%6=9">it is a page with 0.6 background image opacity and 0.9 background image opacity on hover</body>
+```
+
+
 ## Specifications:
 ```
   1--- Class, Reading all "class" tags (Example: <div class=""></div> )
@@ -99,5 +122,29 @@ Note: In this case, just the background Alpha would be changed and the entire co
    21-- Improve, IE9+ background image  
 
  v 1.5.2
-   22-- Improve, Bugs   
+   22-- Improve, Bugs 
+
+ v 1.5.3:
+   23-- Transition, Auto transition (background color and image 0.3s, text 0.1s)
+   24-- Improve, Background images after resize
+   25-- Improve, Background image class (for JQuery)
+ 
+ v 1.6.0:
+   26-- Improve, Background image class in chrome
+   27-- Filter, Background images Gray Scale filter
+   28-- Hover, Background images Gray Scale filter hover
+   29-- Improve, Background image class hover
+ 
+ v 1.6.1:
+   30-- Filter, Compelete background image filter i#[gbisdl] from i#000000 to i#ffffff
+                                                   g = grayscale
+                                                   b = blur
+                                                   i = invert
+                                                   s = sepia color
+                                                   d = darkness
+                                                   l = low-contrast
+                                                   Example: i#000000  means original image
+                                                   Example: i#800000  means 50% gray scaled image
+   31-- Hover, Compelete background image filter hover i#[gbisdl]=[gbisdl] (Example: i#020000=800000 )
+   32-- Improve, Background image filter in chrome, safari, ...
 ```
