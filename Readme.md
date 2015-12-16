@@ -67,15 +67,15 @@ Note: In this case, just the background image would be changed and the entire co
 
 ### Background Image Filter:
 -  Simply add a class which starts with "i#gbisdc" and change the specifications of your image. in this future you can set 6 item of an image: 
-1- g: Grayscale (0 to f in hexadecimal unit [0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f])
-2- b: Blur (0 to f)
-3- i: Invert color (nagative - 0 to f)
-4- s: Sepia color (0 to f)
-5- d: Darkness (0 to f)
-6- c: Low contrast (0 to f)
+1- g: Grayscale (0 to f in hexadecimal unit [0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f]) \s\s
+2- b: Blur (0 to f) \s\s
+3- i: Invert color (nagative - 0 to f) \s\s
+4- s: Sepia color (0 to f) \s\s
+5- d: Darkness (0 to f) \s\s
+6- c: Low contrast (0 to f) \s\s
 
-i#000000 --> grayscale(0%), blur(0px), invert(0%), sepia(0%), brightness(100%), contrast(100%);
-i#ffffff --> grayscale(100%), blur(15px), invert(100%), sepia(100%), brightness(0%), contrast(0%); 
+- i#000000 --> grayscale(0%), blur(0px), invert(0%), sepia(0%), brightness(100%), contrast(100%);
+- i#ffffff --> grayscale(100%), blur(15px), invert(100%), sepia(100%), brightness(0%), contrast(0%); 
 
 ```
 <div class="col-md-12 i#f00000">100% Grayscaled</div>
