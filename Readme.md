@@ -65,6 +65,25 @@ Note: In this case, just the background Alpha would be changed and the entire co
 ```
 Note: In this case, just the background image would be changed and the entire contents of the box would be with one hundred percent clearly displayed.
 
+### Background Image Filter:
+-  Simply add a class which starts with "i#gbisdc" and change the specifications of your image. in this future you can set 6 item of an image: 
+1- g: Grayscale (0 to f in hexadecimal unit [0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f])
+2- b: Blur (0 to f)
+3- i: Invert color (nagative - 0 to f)
+4- s: Sepia color (0 to f)
+5- d: Darkness (0 to f)
+6- c: Low contrast (0 to f)
+
+i#000000 --> grayscale(0%), blur(0px), invert(0%), sepia(0%), brightness(100%), contrast(100%);
+i#ffffff --> grayscale(100%), blur(15px), invert(100%), sepia(100%), brightness(0%), contrast(0%); 
+
+```
+<div class="col-md-12 i#f00000">100% Grayscaled</div>
+<span class="i#0f0000">15px blured, Compeletly blured</span>
+<img src="1.jpg" class="i#00f000" />100% Inverted color, Negative
+<span class="i#700000">50% Grayscaled</span>
+<span class="i#f00">100% Grayscaled and 15px blured</span>
+```
 
 ### Hover:
 - For text hover or background color hover hover, add a = after the color code and then add the hove color code (Example: **b#000=fff**)
